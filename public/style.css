@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Container {
+    width: 400px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .Card {
+    border: 1px dashed gray;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    cursor: move;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .Card:hover, .Card:active {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .Card.isDragging {
+    opacity: 0.4;
+    border: 2px solid blue;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
